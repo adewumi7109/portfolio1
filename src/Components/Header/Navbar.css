@@ -1,0 +1,118 @@
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    position: fixed;
+    width: 94%;
+    z-index: 100;
+
+}
+
+.navlinks{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+   
+}
+ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    text-decoration: none;
+    color: rgb(230, 192, 24);
+}
+.bars{
+    display: none;
+    cursor: pointer;
+}
+header{
+    background-image: url('coding.jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('coding.jpg');
+    height: 100vh;
+    margin-top: 0;
+    background-attachment: fixed;
+    
+}
+header::after{
+    content: '';
+    position: absolute;
+    height: 30px;
+    bottom: 0;
+    background: linear-gradient(to top, #000, transparent);
+    width: 100%;
+   
+    
+}
+
+.dark-bg{
+    background-color: black;
+}
+h1{
+    margin: 0;
+}
+.heroTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.heroTitle h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.gif{
+    width: 100px;
+    position: absolute;
+    bottom: 50px;
+}
+
+
+@media screen and (max-width: 600px){
+    .bars{
+        display: block;
+    }
+    nav{
+        position: fixed;
+    }
+    .navlinks{
+        position: absolute;
+        top: 7vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        width: 55%;
+        /* height: 100px; */
+        gap: 15px;
+        right: 0;
+        transform: translateX(-180%);
+        transition: 0.5s ease-in-out;
+        padding-bottom: 20px;
+        
+       
+    }
+
+   .active{
+    transform: translateX(0);
+    }
+    
+   
+    
+}
