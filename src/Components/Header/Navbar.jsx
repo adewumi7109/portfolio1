@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import img from './giphy.gif'
 import { useRef, useEffect } from 'react';

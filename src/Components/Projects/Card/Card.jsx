@@ -1,16 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../project.css'
 function Card({title, technologyUsed, content, url}) {
 
-    const [isHovered, setIsHovered ] = useState(false)
+    // const [isHovered, setIsHovered ] = useState(false)
 
   return (
     
   <a 
             href={url} 
             target='_blank'
-            onMouseOver={()=> setIsHovered(true)} 
-            onMouseLeave={()=> setIsHovered(false)} 
+            rel="noreferrer"
+            // onMouseOver={()=> setIsHovered(true)} 
+            // onMouseLeave={()=> setIsHovered(false)} 
             className="project">
             
            {/* {isHovered ? (
